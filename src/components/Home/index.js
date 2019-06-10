@@ -9,9 +9,9 @@ import React from 'react';
 // Styles
 import './home.scss';
 // Components
+import Contact from 'Containers/Contact';
 import Developer from './Developer';
 import Abstract from './Abstract';
-import Contact from './Contact';
 
 /**
  * Code

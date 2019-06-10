@@ -2,16 +2,20 @@
  * NPM imports
  */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * Local imports
  */
+// Styles
 import './contact.scss';
+// Components
+import Link from 'Components/Link';
 
 /**
  * Code
  */
-const Contact = () => (
+const Contact = ({ socialinks }) => (
   <section id="contact" className="home-section">
     <div className="home-inner">
 
@@ -20,13 +24,22 @@ const Contact = () => (
       </div>
 
       <div className="home-panel">
-        {/* eslint-disable-next-line max-len */}
-        <p className="home-parag">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dolorem pariatur, enim ut reprehenderit adipisci sequi necessitatibus doloremque numquam vitae aspernatur quam quaerat iste.</p>
+        <p className="home-parag">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dolorem pariatur, enim ut reprehenderit adipisci.</p>
+      </div>
+
+      <div id="skills-contact">
+        {socialinks.map(socialink => (
+          <Link key={socialink.id} {...socialink} />
+        ))}
       </div>
 
     </div>
   </section>
 );
+
+Contact.propTypes = {
+  socialinks: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 /**
  * Export

@@ -16,6 +16,8 @@ module.exports = {
   resolve: {
     alias: {
       Components: path.resolve(__dirname, 'src/components/'),
+      Store: path.resolve(__dirname, 'src/store/'),
+      Containers: path.resolve(__dirname, 'src/containers/'),
     }
   },
   // Set the entry point
