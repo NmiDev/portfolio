@@ -1,0 +1,60 @@
+@import '../../styles/vars';
+
+#home {
+    padding-top: $header-height;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "developer"
+        "abstract"
+        "contact";
+
+    .home-section {
+        padding: 3rem;
+    }
+
+    .home-title, .home-subtitle {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-subtitle {
+        font-size: 1rem;
+    }
+
+    .home-parag {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .home-inner {
+
+    }
+
+    .home-clipper {
+
+    }
+
+    .home-panel {
+
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 768px) { 
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    #home {
+        grid-template-columns: 70% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas: 
+            "developer abstract"
+            "developer contact";
+        height: calc(100vh);
+    }
+}
