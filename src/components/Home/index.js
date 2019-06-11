@@ -17,7 +17,7 @@ import Abstract from './Abstract';
  * Code
  */
 const Home = () => (
-  <main id="home">
+  <div id="home">
 
     {/* Section developer */}
     <Developer />
@@ -28,7 +28,7 @@ const Home = () => (
     {/* Section contact */}
     <Contact />
 
-  </main>
+  </div>
 );
 
 /**

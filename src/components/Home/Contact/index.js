@@ -17,18 +17,13 @@ import Link from 'Components/Link';
  */
 const Contact = ({ socialinks }) => (
   <section id="contact" className="home-section">
-    <div className="home-inner">
 
-      <div className="home-inner-title">
-        <h2 className="home-subtitle">Contact</h2>
-      </div>
+    <div className="contact-container">
+      <h2 className="home-subtitle">Contact</h2>
 
-      <div className="home-inner-parag">
-        <p className="home-parag">
-          Je ne refuse jamais un nouveau défi, alors n’hésitez pas à me laisser un message.
-        </p>
-      </div>
-
+      <p className="home-parag">
+        Je ne refuse jamais un nouveau challenge, alors n’hésitez pas à me laisser un message.
+      </p>
     </div>
 
     <div className="contact-links">

@@ -1,7 +1,6 @@
 @import '../../styles/vars';
 
 #home {
-    padding-top: $header-height;
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: 
@@ -10,41 +9,20 @@
         "contact";
 
     .home-section {
-        padding: 3rem;
-    }
-
-    .home-title, .home-subtitle {
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
+        padding: 4rem 3rem;
     }
 
     .home-subtitle {
+        font-weight: 700;
+        text-transform: uppercase;
         font-size: 1.1rem;
+        margin-bottom: 1rem;
     }
 
     .home-parag {
         font-size: 0.9rem;
         line-height: 1.6;
     }
-
-    .home-inner {
-
-    }
-
-    .home-clipper {
-
-    }
-
-    .home-panel {
-
-    }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 768px) { 
-
 }
 
 // Large devices (desktops, 992px and up)
@@ -55,6 +33,10 @@
         grid-template-areas: 
             "developer abstract"
             "developer contact";
-        min-height: calc(100vh);
+        height: calc(100vh - 50px);
+
+        .home-section {
+            padding: 3rem;
+        }
     }
 }

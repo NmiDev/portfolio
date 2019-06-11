@@ -19,7 +19,9 @@ const Application = () => (
   <div id="application">
     <Header />
 
-    <Home />
+    <main>
+      <Home />
+    </main>
   </div>
 );
 

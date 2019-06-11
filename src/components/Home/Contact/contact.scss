@@ -4,12 +4,13 @@
     color: $color-light;
     grid-area: contact;
     background: $background-contact;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .contact-links {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        margin-top: 3rem;
     }
 }

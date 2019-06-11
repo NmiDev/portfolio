@@ -60,7 +60,9 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-icons": "^3.7.0",
+    "react-loader-spinner": "^2.3.0",
     "react-redux": "^6.0.1",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "typed.js": "^2.0.10"
   }
 }

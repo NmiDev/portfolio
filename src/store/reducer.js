@@ -11,8 +11,8 @@ const initialState = {
       },
       {
         id: 2,
-        name: 'Contact',
-        href: '/contact',
+        name: 'Projects',
+        href: '/projects',
       },
     ],
     socialinks: [

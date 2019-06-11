@@ -6,24 +6,25 @@ import React from 'react';
 /**
  * Local imports
  */
+// Styles
 import './developer.scss';
+// Components
+import Robot from 'Containers/Robot';
+import Animate from 'Containers/Animate';
 
 /**
  * Code
  */
 const Developer = () => (
   <section id="developer" className="home-section">
-    <div className="home-inner">
+    {/* Robot animation */}
+    <Robot />
 
-      <div className="home-inner-title">
-        <h1 className="home-title">Developpeur</h1>
-      </div>
+    {/* Main title */}
+    <h1 className="developer-title">Bonjour, je suis Nicolas !</h1>
 
-      <div className="home-inner-parag">
-        <p className="home-parag">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-      </div>
-
-    </div>
+    {/* Typed Js animation */}
+    <Animate />
   </section>
 );
 
