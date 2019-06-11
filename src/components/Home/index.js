@@ -19,10 +19,13 @@ import Abstract from './Abstract';
 const Home = () => (
   <main id="home">
 
+    {/* Section developer */}
     <Developer />
 
+    {/* Section abstract */}
     <Abstract />
 
+    {/* Section contact */}
     <Contact />
 
   </main>

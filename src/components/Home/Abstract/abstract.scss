@@ -3,4 +3,8 @@
 #abstract {
     grid-area: abstract;
     background-color: $background-abstract;
+
+    .home-parag:first-of-type {
+        margin-bottom: 1rem;
+    }
 }

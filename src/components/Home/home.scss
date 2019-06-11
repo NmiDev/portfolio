@@ -16,12 +16,12 @@
     .home-title, .home-subtitle {
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-bottom: 1rem;
     }
 
     .home-subtitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .home-parag {
@@ -50,11 +50,11 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     #home {
-        grid-template-columns: 70% auto;
+        grid-template-columns: 60% auto;
         grid-template-rows: 60% auto;
         grid-template-areas: 
             "developer abstract"
             "developer contact";
-        height: calc(100vh);
+        min-height: calc(100vh);
     }
 }

@@ -15,13 +15,12 @@ const Developer = () => (
   <section id="developer" className="home-section">
     <div className="home-inner">
 
-      <div className="home-clipper">
+      <div className="home-inner-title">
         <h1 className="home-title">Developpeur</h1>
       </div>
 
-      <div className="home-panel">
-        {/* eslint-disable-next-line max-len */}
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <div className="home-inner-parag">
+        <p className="home-parag">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
       </div>
 
     </div>

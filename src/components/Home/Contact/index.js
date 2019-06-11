@@ -19,21 +19,24 @@ const Contact = ({ socialinks }) => (
   <section id="contact" className="home-section">
     <div className="home-inner">
 
-      <div className="home-clipper">
+      <div className="home-inner-title">
         <h2 className="home-subtitle">Contact</h2>
       </div>
 
-      <div className="home-panel">
-        <p className="home-parag">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dolorem pariatur, enim ut reprehenderit adipisci.</p>
-      </div>
-
-      <div id="skills-contact">
-        {socialinks.map(socialink => (
-          <Link key={socialink.id} {...socialink} />
-        ))}
+      <div className="home-inner-parag">
+        <p className="home-parag">
+          Je ne refuse jamais un nouveau défi, alors n’hésitez pas à me laisser un message.
+        </p>
       </div>
 
     </div>
+
+    <div className="contact-links">
+      {socialinks.map(socialink => (
+        <Link key={socialink.id} {...socialink} />
+      ))}
+    </div>
+
   </section>
 );
 

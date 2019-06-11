@@ -15,13 +15,14 @@ const Abstract = () => (
   <section id="abstract" className="home-section">
     <div className="home-inner">
 
-      <div className="home-clipper">
-        <h2 className="home-subtitle">Abstract</h2>
+      <div className="home-inner-title">
+        <h2 className="home-subtitle">Qui suis-je ?</h2>
       </div>
 
-      <div className="home-panel">
-        {/* eslint-disable-next-line max-len */}
-        <p className="home-parag">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dolorem pariatur, enim ut reprehenderit adipisci sequi necessitatibus doloremque numquam vitae aspernatur quam quaerat iste.</p>
+      <div className="home-inner-parag">
+        <p className="home-parag">Véritable passionné des nouvelles technologies et du vaste univers numérique, le développement Web est mon domaine de prédilection.</p>
+
+        <p className="home-parag">Ce qui m’anime dans ce métier, c’est l’apprentissage permanent et la découverte perpétuelle de différentes techniques. C’est une remise en question incessante, au sein d’une incroyable communauté.</p>
       </div>
 
     </div>

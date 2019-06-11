@@ -17,6 +17,7 @@ module.exports = {
     ],
     "rules": {
       "no-console": "off",
+      "max-len": "off",
       "jsx-a11y/anchor-is-valid": "off",
       "jsx-a11y/click-events-have-key-events": "off", // Handle event with keyboard alternative
       'react/jsx-filename-extension': [2, { extensions: ['.js'] }], // Allowed .js extension for files with JSX
