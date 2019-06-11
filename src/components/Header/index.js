@@ -9,7 +9,8 @@ import React from 'react';
 // Styles
 import './header.scss';
 // Components
-import Navbar from 'Components/Navbar';
+import Navbar from 'Containers/Navbar';
+import Switch from 'Containers/Switch';
 
 /**
  * Code
@@ -17,7 +18,7 @@ import Navbar from 'Components/Navbar';
 const Header = () => (
   <header id="header">
     {/* Logo */}
-    <a href="#" className="logo">Nicolas Missiaen</a>
+    <Switch />
 
     {/* Navbar */}
     <Navbar />

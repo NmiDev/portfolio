@@ -2,6 +2,7 @@
  * NPM imports
  */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * Local imports
@@ -11,15 +12,23 @@ import './navbar.scss';
 /**
  * Code
  */
-const Navbar = () => (
-  <nav id="nav">
-    <ul className="nav-list">
-      <li>
-        <a href="#" className="nav-list-link">Home</a>
-      </li>
-    </ul>
+const Navbar = ({ navlinks }) => (
+  <nav id="navbar">
+    {navlinks.map(navlink => (
+      <a
+        href={navlink.href}
+        className="navbar-link"
+        key={navlink.id}
+      >
+        {navlink.name}
+      </a>
+    ))}
   </nav>
 );
+
+Navbar.propTypes = {
+  navlinks: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 /**
  * Export

@@ -1,0 +1,38 @@
+@import '../../styles/vars';
+
+#switch {
+    color: $color-highlight;
+    display: flex;
+    align-items: center;
+
+    .switch-button {
+        font-size: 28px; 
+    }
+
+    .switch-title {
+        text-transform: uppercase;
+        margin-left: 0.5rem;
+        font-weight: 700;
+        font-size: 14px; 
+    }
+
+    .switch-title--animation {
+        animation-duration: 2s;
+        animation-name: opacity;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0.35;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.35;
+    }
+}
