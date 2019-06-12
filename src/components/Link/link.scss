@@ -19,13 +19,17 @@
   }
 
 .social-link-linkedin {
-    background: #87B8C2;
+    background: $background-blue;
 }
 
 .social-link-github {
-    background: #70A490;
+    background: $background-green;
 }
 
 .social-link-mail {
-    background-color: #B1748F;
+    background: $background-pink;
+}
+
+.social-link-resume {
+    background: $background-orange;
 }

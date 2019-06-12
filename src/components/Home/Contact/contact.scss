@@ -9,8 +9,19 @@
     justify-content: space-between;
 
     .contact-links {
+        margin-top: 4rem;
         display: flex;
         justify-content: center;
         align-items: flex-end;
     }
 }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #contact {
+        .contact-links {
+            margin-top: 0;
+        }
+    }
+}
+

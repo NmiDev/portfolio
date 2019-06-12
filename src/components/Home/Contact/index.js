@@ -22,7 +22,7 @@ const Contact = ({ socialinks }) => (
       <h2 className="home-subtitle">Contact</h2>
 
       <p className="home-parag">
-        Je ne refuse jamais un nouveau challenge, alors n’hésitez pas à me laisser un message.
+        Je ne refuse jamais un nouveau challenge, alors n’hésitez pas à m’adresser un message.
       </p>
     </div>
 

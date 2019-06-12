@@ -26,11 +26,10 @@ class Animate extends React.Component {
       startDelay: 20,
       typeSpeed: 150,
       backSpeed: 100,
-      shuffle: true,
+      shuffle: false,
       backDelay: 1000,
       loop: true,
       loopCount: Infinity,
-      contentType: 'html',
     };
     this.typed = new Typed(this.el, options);
   }

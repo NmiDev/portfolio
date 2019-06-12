@@ -26,19 +26,17 @@ body {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
   html {
     font-size: 18px;
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
-}
-
 // Max resolution 4k and TV monitors (large desktops, 1800px and up)
 @media (min-width: 1800px) {
-  html {
-    font-size: 21px;
-  }
+
 }
