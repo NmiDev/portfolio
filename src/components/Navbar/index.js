@@ -3,6 +3,7 @@
  */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 /**
  * Local imports
@@ -15,13 +16,15 @@ import './navbar.scss';
 const Navbar = ({ navlinks }) => (
   <nav id="navbar">
     {navlinks.map(navlink => (
-      <a
-        href={navlink.href}
+      <NavLink
+        to={navlink.href}
         className="navbar-link"
         key={navlink.id}
+        activeClassName="navbar-link-active"
+        exact
       >
         {navlink.name}
-      </a>
+      </NavLink>
     ))}
   </nav>
 );

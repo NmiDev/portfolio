@@ -7,7 +7,7 @@ const initialState = {
       {
         id: 1,
         name: 'Home',
-        href: '/home',
+        href: '/',
       },
       {
         id: 2,

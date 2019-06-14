@@ -2,6 +2,7 @@
  * NPM imports
  */
 import React from 'react';
+import { Route } from 'react-router-dom';
 
 /**
  * Local imports
@@ -11,6 +12,7 @@ import './application.scss';
 // Components
 import Header from 'Components/Header';
 import Home from 'Components/Home';
+import Contact from 'Components/Contact';
 
 /**
  * Code
@@ -21,7 +23,8 @@ const Application = () => (
     <Header />
 
     <main>
-      <Home />
+      <Route path="/" exact component={Home} />
+      <Route path="/contact" component={Contact} />
     </main>
 
   </div>
