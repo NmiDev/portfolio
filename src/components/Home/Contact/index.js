@@ -19,10 +19,10 @@ const Contact = ({ socialinks }) => (
   <section id="contact" className="home-section">
 
     <div className="contact-container">
-      <h2 className="home-subtitle">Contact</h2>
+      <h2 className="home-subtitle">And more ...</h2>
 
       <p className="home-parag">
-        Je ne refuse jamais un nouveau challenge, alors n’hésitez pas à m’adresser un message.
+        Je ne refuse jamais un nouvel échange, alors n’hésitez pas à m’adresser un message par les différents canaux ci-dessous ! À bientôt.
       </p>
     </div>
 
