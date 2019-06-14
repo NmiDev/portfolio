@@ -1,1 +1,54 @@
 @import '../../styles/vars';
+
+#contact {
+    color: $color-light;
+    height: calc(100vh - 50px);
+
+    .contact-mail {
+        height: calc(100% - 50px);
+        background: $background-pink;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .contact-mail-link {
+            text-decoration: none;
+            color: $color-light;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-mail-github {
+            text-decoration: none;
+            color: $color-dark;
+            font-size: 1.3rem;
+        }
+    }
+
+    .contact-footer {
+        height: 50px;
+        font-size: 14px;
+        padding: 1rem;
+        background: $background-dark;
+        display: flex;
+        align-items: center;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    #contact {
+    
+        .contact-mail {
+    
+            .contact-mail-link {
+                font-size: 3rem;
+            }
+    
+            .contact-mail-github {
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -34,12 +34,6 @@ const initialState = {
         href: 'mailto:missiaen.nicolas@gmail.com',
         icon: 'FaEnvelope',
       },
-      {
-        id: 4,
-        name: 'resume',
-        href: 'mailto:missiaen.nicolas@gmail.com',
-        icon: 'FaFile',
-      },
     ],
     strings: [
       'Développeur',
