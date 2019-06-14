@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import Contact from 'Components/Home/Contact';
+import More from 'Components/Home/More';
 
 /**
  * Actions creators
@@ -25,11 +25,11 @@ const mapStateToProps = state => ({
 /**
  * Container
  */
-const ContactContainer = connect(
+const MoreContainer = connect(
   mapStateToProps,
-)(Contact);
+)(More);
 
 /**
  * Export
  */
-export default ContactContainer;
+export default MoreContainer;

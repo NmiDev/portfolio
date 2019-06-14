@@ -1,6 +1,6 @@
 @import '../../../styles/vars';
 
-#contact {
+#more {
     color: $color-light;
     grid-area: contact;
     background: $background-contact;
@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    .contact-links {
+    .more-links {
         margin-top: 4rem;
         display: flex;
         justify-content: center;
@@ -18,8 +18,8 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    #contact {
-        .contact-links {
+    #more {
+        .more-links {
             margin-top: 0;
         }
     }

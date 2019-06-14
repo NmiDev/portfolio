@@ -22,6 +22,7 @@ const Switch = ({ power, switchPower }) => {
 
   return (
     <div id="switch">
+
       {/* Switch On */}
       {power === true && <FaToggleOn className="switch-button" onClick={switchPower} />}
 
@@ -30,6 +31,7 @@ const Switch = ({ power, switchPower }) => {
 
       {/* Title */}
       <p className={titleClass}>Power</p>
+
     </div>
   );
 };

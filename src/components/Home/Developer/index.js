@@ -17,6 +17,7 @@ import Animate from 'Containers/Animate';
  */
 const Developer = () => (
   <section id="developer" className="home-section">
+
     {/* Robot animation */}
     <Robot />
 
@@ -25,6 +26,7 @@ const Developer = () => (
 
     {/* Typed Js animation */}
     <Animate />
+
   </section>
 );
 

@@ -8,17 +8,17 @@ import PropTypes from 'prop-types';
  * Local imports
  */
 // Styles
-import './contact.scss';
+import './more.scss';
 // Components
 import Link from 'Components/Link';
 
 /**
  * Code
  */
-const Contact = ({ socialinks }) => (
-  <section id="contact" className="home-section">
+const More = ({ socialinks }) => (
+  <section id="more" className="home-section">
 
-    <div className="contact-container">
+    <div className="more-container">
       <h2 className="home-subtitle">And more ...</h2>
 
       <p className="home-parag">
@@ -26,7 +26,7 @@ const Contact = ({ socialinks }) => (
       </p>
     </div>
 
-    <div className="contact-links">
+    <div className="more-links">
       {socialinks.map(socialink => (
         <Link key={socialink.id} {...socialink} />
       ))}
@@ -35,11 +35,11 @@ const Contact = ({ socialinks }) => (
   </section>
 );
 
-Contact.propTypes = {
+More.propTypes = {
   socialinks: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 /**
  * Export
  */
-export default Contact;
+export default More;

@@ -9,7 +9,7 @@ import React from 'react';
 // Styles
 import './home.scss';
 // Components
-import Contact from 'Containers/Contact';
+import More from 'Containers/More';
 import Developer from './Developer';
 import Abstract from './Abstract';
 
@@ -25,8 +25,8 @@ const Home = () => (
     {/* Section abstract */}
     <Abstract />
 
-    {/* Section contact */}
-    <Contact />
+    {/* Section more */}
+    <More />
 
   </div>
 );

@@ -17,11 +17,13 @@ import Home from 'Components/Home';
  */
 const Application = () => (
   <div id="application">
+
     <Header />
 
     <main>
       <Home />
     </main>
+
   </div>
 );
 

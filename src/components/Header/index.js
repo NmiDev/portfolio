@@ -17,11 +17,13 @@ import Switch from 'Containers/Switch';
  */
 const Header = () => (
   <header id="header">
-    {/* Logo */}
+
+    {/* Switch */}
     <Switch />
 
     {/* Navbar */}
     <Navbar />
+
   </header>
 );
 
