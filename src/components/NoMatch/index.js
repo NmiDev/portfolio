@@ -9,27 +9,25 @@ import { NavLink } from 'react-router-dom';
  */
 // Styles
 import './nomatch.scss';
-// Components
-import Copyright from 'Components/Copyright';
 
 /**
  * Code
  */
 const NoMatch = () => (
   <div id="nomatch">
-    <div className="nomatch-alert">
-      <p className="nomatch-alert-message">
-        Vous faites fausse route !
-      </p>
-      <NavLink
-        to="/"
-        className="nomatch-alert-redirect"
-        exact
-      >
-        Retrouvez la lumière ...
-      </NavLink>
-    </div>
-    <Copyright />
+
+    <p className="nomatch-alert">
+      Vous faites fausse route !
+    </p>
+
+    <NavLink
+      to="/"
+      className="nomatch-redirect"
+      exact
+    >
+      Retrouvez la lumière ...
+    </NavLink>
+
   </div>
 );
 

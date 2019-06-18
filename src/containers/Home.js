@@ -4,16 +4,20 @@
 import { connect } from 'react-redux';
 
 /**
- * Local imports
+ * Local import
  */
-import Wheels from 'Components/Wheels';
+import Home from 'Components/Home';
+
+/**
+ * Actions creators
+ */
 
 /**
  * State (Store)
  */
-// Datas from store and ownProps
+// Dats from store and ownProps
 const mapStateToProps = state => ({
-  power: state.power,
+  socialinks: state.datas.socialinks,
 });
 
 // Action from store and ownProps
@@ -21,11 +25,11 @@ const mapStateToProps = state => ({
 /**
  * Container
  */
-const WheelsContainer = connect(
+const HomeContainer = connect(
   mapStateToProps,
-)(Wheels);
+)(Home);
 
 /**
  * Export
  */
-export default WheelsContainer;
+export default HomeContainer;

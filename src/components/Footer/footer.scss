@@ -1,10 +1,11 @@
 @import '../../styles/vars';
 
-.copyright {
+#footer {
   height: 50px;
   font-size: 14px;
   padding: 1rem;
   background: $background-dark;
+  color: $color-light;
   display: flex;
   align-items: center;
 }

@@ -2,44 +2,37 @@
 
 #contact {
     color: $color-light;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 100px);
+    background: $background-pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .contact-mail {
-        height: calc(100% - 50px);
-        background: $background-pink;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-decoration: none;
+        color: $color-light;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
 
-        .contact-mail-link {
-            text-decoration: none;
-            color: $color-light;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-mail-github {
-            text-decoration: none;
-            color: $color-dark;
-            font-size: 1.3rem;
-        }
+    .contact-github {
+        text-decoration: none;
+        color: $color-dark;
+        font-size: 1.3rem;
     }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     #contact {
-    
+
         .contact-mail {
-    
-            .contact-mail-link {
-                font-size: 3rem;
-            }
-    
-            .contact-mail-github {
-                font-size: 2rem;
-            }
+            font-size: 3rem;
+        }
+
+        .contact-github {
+            font-size: 2rem;
         }
     }
 }

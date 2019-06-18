@@ -8,12 +8,12 @@ import Typed from 'typed.js';
 /**
  * local imports
  */
-import './animate.scss';
+import './types.scss';
 
 /**
  * Code
  */
-class Animate extends React.Component {
+class Types extends React.Component {
   static propTypes = {
     strings: PropTypes.arrayOf(PropTypes.string).isRequired,
   }
@@ -43,7 +43,7 @@ class Animate extends React.Component {
       <div className="wrap">
         <div className="type-wrap">
           <span
-            className="animate"
+            className="types"
             ref={(el) => { this.el = el; }}
           />
         </div>
@@ -55,4 +55,4 @@ class Animate extends React.Component {
 /**
  * Export
  */
-export default Animate;
+export default Types;

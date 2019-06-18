@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 /**
  * Local imports
  */
-import Animate from 'Components/Animate';
+import Types from 'Components/Types';
 
 /**
  * State (Store)
@@ -21,11 +21,11 @@ const mapStateToProps = state => ({
 /**
  * Conatiners
  */
-const AnimateContainer = connect(
+const TypesContainer = connect(
   mapStateToProps,
-)(Animate);
+)(Types);
 
 /**
  * Export
  */
-export default AnimateContainer;
+export default TypesContainer;

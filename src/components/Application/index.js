@@ -11,9 +11,10 @@ import { Route, Switch } from 'react-router-dom';
 import './application.scss';
 // Components
 import Header from 'Components/Header';
-import Home from 'Components/Home';
+import Home from 'Containers/Home';
 import Contact from 'Components/Contact';
 import NoMatch from 'Components/NoMatch';
+import Footer from 'Components/Footer';
 
 /**
  * Code
@@ -33,6 +34,8 @@ const Application = () => (
         <Route component={NoMatch} />
       </Switch>
     </main>
+
+    <Footer />
 
   </div>
 );
