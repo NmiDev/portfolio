@@ -2,13 +2,14 @@
  * NPM imports
  */
 import React from 'react';
-import Moment from 'react-moment';
 
 /**
  * Local imports
  */
 // Styles
 import './contact.scss';
+// Components
+import Copyright from 'Components/Copyright';
 
 /**
  * Code
@@ -29,11 +30,7 @@ const Contact = () => (
         GitHub
       </a>
     </div>
-    <div className="contact-footer">
-      <p>
-        Merci de votre visite - &copy; <span><Moment format="YYYY" /></span> NmiWeb
-      </p>
-    </div>
+    <Copyright />
   </div>
 );
 

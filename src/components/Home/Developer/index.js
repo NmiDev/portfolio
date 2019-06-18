@@ -22,7 +22,7 @@ const Developer = () => (
     <Robot />
 
     {/* Main title */}
-    <h1 className="developer-title">Bonjour, je suis Nicolas !</h1>
+    <h1 className="home-title">Bonjour, je suis Nicolas !</h1>
 
     {/* Typed Js animation */}
     <Animate />

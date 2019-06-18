@@ -3,16 +3,16 @@
  */
 const initialState = {
   datas: {
-    navlinks: [
+    views: [
       {
         id: 1,
         name: 'Home',
-        href: '/',
+        path: '/',
       },
       {
         id: 2,
         name: 'Contact',
-        href: '/contact',
+        path: '/contact',
       },
     ],
     socialinks: [

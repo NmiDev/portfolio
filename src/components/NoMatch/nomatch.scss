@@ -1,0 +1,45 @@
+@import '../../styles/vars';
+
+#nomatch {
+  color: $color-light;
+  height: calc(100vh - 50px);
+
+  .nomatch-alert {
+      height: calc(100% - 50px);
+      background: $background-dark;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .nomatch-alert-message {
+          text-align: center;
+          color: $color-light;
+          font-size: 2rem;
+          margin-bottom: 1rem;
+      }
+
+      .nomatch-alert-redirect {
+          text-decoration: none;
+          color: $color-highlight;
+          font-size: 1.3rem;
+      }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  #nomatch  {
+  
+      .nomatch-alert {
+  
+          .nomatch-alert-message {
+              font-size: 3rem;
+          }
+  
+          .nomatch-alert-redirect {
+              font-size: 2rem;
+          }
+      }
+  }
+}

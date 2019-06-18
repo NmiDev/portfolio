@@ -43,7 +43,7 @@ class Animate extends React.Component {
       <div className="wrap">
         <div className="type-wrap">
           <span
-            style={{ whiteSpace: 'pre' }}
+            className="animate"
             ref={(el) => { this.el = el; }}
           />
         </div>

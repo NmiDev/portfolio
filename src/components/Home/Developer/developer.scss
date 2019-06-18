@@ -2,15 +2,18 @@
 
 #developer {
     grid-area: developer;
+    height: calc(100vh - 50px) ;
     background: $background-light;
     color: $color-dark;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
-    .developer-title {
-        font-size: 1.4rem;
-        margin: 3rem 0 1rem 0;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    #developer {
+        height: 100%;
     }
 }

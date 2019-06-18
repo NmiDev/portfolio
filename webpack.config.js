@@ -92,6 +92,15 @@ module.exports = {
       },
     ]
   },
+  // Dev server
+  devServer: {
+    overlay: true,
+    stats: 'minimal',
+    progress: true,
+    inline: true,
+    open: true,
+    historyApiFallback: true, // Require with React Router
+  },
   // Plugins configurations
   plugins: [
     new HtmlWebPackPlugin({
