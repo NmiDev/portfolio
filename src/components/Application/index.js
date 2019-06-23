@@ -21,20 +21,22 @@ import Footer from 'Components/Footer';
  */
 const Application = () => (
   <div id="application">
-
+    {/* Header */}
     <Header />
 
+    {/* Main with routes */}
     <main>
       <Switch>
         {/* Home view */}
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact render={() => (<Home />)} />
         {/* Contact view */}
-        <Route path="/contact" component={Contact} />
+        <Route path="/contact" render={() => (<Contact />)} />
         {/* No match */}
-        <Route component={NoMatch} />
+        <Route render={() => (<NoMatch />)} />
       </Switch>
     </main>
 
+    {/* Footer */}
     <Footer />
 
   </div>

@@ -37,7 +37,7 @@ const initialState = {
       {
         id: 4,
         name: 'resume',
-        href: 'mailto:missiaen.nicolas@gmail.com',
+        href: 'https://drive.google.com/open?id=1PSQxnEJZbdC0WBets0VE1r7qI3FaQbdk',
         icon: 'FaFile',
       },
     ],

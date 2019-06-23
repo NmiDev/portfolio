@@ -31,8 +31,10 @@ class Types extends React.Component {
       loop: true,
       loopCount: Infinity,
     };
+
     this.typed = new Typed(this.el, options);
   }
+
 
   componentWillUnmount() {
     this.typed.destroy();

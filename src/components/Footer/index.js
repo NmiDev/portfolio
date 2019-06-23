@@ -15,7 +15,7 @@ import './footer.scss';
 const Footer = () => (
   <footer id="footer">
     <p>
-      Merci de votre visite - <span><Moment format="YYYY" /></span> NmiWeb
+      Merci de votre visite - <span><Moment format="YYYY" /></span> - NmiWeb
     </p>
   </footer>
 );

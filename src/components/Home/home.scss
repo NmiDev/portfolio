@@ -75,7 +75,10 @@
     }
 
     #abstract {
-        padding: 3rem;
+        padding: 0 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         .abstract-parag {
             margin-bottom: 1rem;
