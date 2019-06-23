@@ -21,7 +21,7 @@ const Home = ({ socialinks }) => (
   <div id="home">
 
     {/* Section developer */}
-    <section id="developer">
+    <section id="developer" className="home-section">
       <Robot />
 
       <h1 className="developer-title">Bonjour, je suis Nicolas !</h1>
@@ -30,7 +30,7 @@ const Home = ({ socialinks }) => (
     </section>
 
     {/* Section abstract */}
-    <section id="abstract">
+    <section id="abstract" className="home-section">
       <p className="abstract-parag">Véritable passionné des nouvelles technologies et du vaste univers numérique, le développement Web est mon domaine de prédilection.</p>
 
       <p className="abstract-parag">Ce qui m’anime dans ce métier, c’est l’apprentissage permanent et la découverte perpétuelle de différentes techniques. C’est une remise en question incessante, au sein d’une incroyable communauté.</p>
@@ -40,7 +40,7 @@ const Home = ({ socialinks }) => (
 
 
     {/* Section more */}
-    <section id="social">
+    <section id="social" className="home-section">
       {socialinks.map(socialink => (
         <Link key={socialink.id} {...socialink} />
       ))}

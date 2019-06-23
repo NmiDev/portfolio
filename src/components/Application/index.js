@@ -11,10 +11,11 @@ import { Route, Switch } from 'react-router-dom';
 import './application.scss';
 // Components
 import Header from 'Components/Header';
+import Footer from 'Components/Footer';
+// Views
 import Home from 'Containers/Home';
 import Contact from 'Components/Contact';
 import NoMatch from 'Components/NoMatch';
-import Footer from 'Components/Footer';
 
 /**
  * Code
@@ -28,11 +29,11 @@ const Application = () => (
     <main>
       <Switch>
         {/* Home view */}
-        <Route path="/" exact render={() => (<Home />)} />
+        <Route path="/" exact component={Home} />
         {/* Contact view */}
-        <Route path="/contact" render={() => (<Contact />)} />
+        <Route path="/contact" component={Contact} />
         {/* No match */}
-        <Route render={() => (<NoMatch />)} />
+        <Route component={NoMatch} />
       </Switch>
     </main>
 

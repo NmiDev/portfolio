@@ -7,23 +7,27 @@
         "developer"
         "abstract"
         "contact";
+
+    .home-section {
+        padding: 3rem 1.5rem;
+    }
 }
 
 #developer {
     grid-area: developer;
-    height: calc(100vh - 50px) ;
+    // height: calc(100vh - 50px) ;
     background: $background-light;
     color: $color-dark;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 1.5rem;
 
     .developer-title {
         text-align: center;
         font-size: 1.6rem;
         margin: 3rem 0 1rem 0;
+        line-height: 1.2;
     }
 }
 
@@ -31,7 +35,6 @@
     grid-area: abstract;
     background-color: $background-blue;
     color: $color-dark;
-    padding: 3rem 1.5rem;
 
     .abstract-parag {
         margin-bottom: 1.5rem;
@@ -51,16 +54,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0;
+}
+
+// Media querie for Developer section
+@media (max-width: 576px) and (min-height: 640px) {
+    #developer {
+        height: calc(100vh - 50px) ;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+    #home {
+        .home-section {
+            padding: 5rem 2.5rem;
+        }
+    }
+ }
 
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
+// Large devices (desktops, 1024px and up)
+@media (min-width: 1024px) { 
     #home {
         grid-template-columns: 60% auto;
         grid-template-rows: 70% auto;
@@ -68,14 +81,13 @@
             "developer abstract"
             "developer contact";
         height: calc(100vh - 100px);
-    }
 
-    #developer {
-        height: 100%;
+        .home-section {
+            padding: 3rem 1.5rem;
+        }
     }
 
     #abstract {
-        padding: 0 4rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -85,9 +97,5 @@
             font-size: 1rem;
             line-height: 1.6;
         }
-    }
-        
-    #social {
-        padding: 0;
     }
 }
