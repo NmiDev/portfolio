@@ -27,9 +27,7 @@ const rootComponent = (
 
 const targetNode = document.getElementById('root');
 
-document.addEventListener('DOMContentLoaded', () => {
-  render(rootComponent, targetNode);
-});
+render(rootComponent, targetNode);
 
 /**
 * Exports

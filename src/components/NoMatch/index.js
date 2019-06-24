@@ -18,7 +18,7 @@ const NoMatch = () => (
   <div id="nomatch">
 
     <p className="nomatch-alert">
-      Tu fais fausse route !
+      Tu fais fausse route
     </p>
 
     <NavLink
@@ -27,7 +27,7 @@ const NoMatch = () => (
       exact
     >
       <span className="nomatch-redirect-container">
-      Choisis la pillule rouge <img src={Pill} alt="Matrix, la pillule rouge pour voir Alice aux pays des merveilles " />
+      Choisis la pillule rouge <img src={Pill} alt="Choisis la pillule rouge pour voir Alice aux pays des merveilles " />
       </span>
     </NavLink>
 

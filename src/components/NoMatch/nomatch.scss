@@ -2,7 +2,9 @@
 
 #nomatch {
   color: $color-light;
-  height: calc(100vh - 100px);
+  // Height fallback for browsers that do not support Custom Properties
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100 - 100px);
   background: $background-dark;
   text-align: center;
   display: flex;
@@ -12,44 +14,44 @@
   border-top: 1px groove grey;
   border-bottom: 1px groove grey;
 
-    .nomatch-alert {
-        color: $color-light;
-        font-size: 2rem;
-        margin-bottom: 1rem;
+  .nomatch-alert {
+    color: $color-light;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .nomatch-redirect {
+    text-decoration: none;
+    color: $color-highlight;
+    font-size: 1.3rem;
+
+    .nomatch-redirect-container {
+      display: flex;
+      align-items: center;
     }
 
-    .nomatch-redirect {
-        text-decoration: none;
-        color: $color-highlight;
-        font-size: 1.3rem;
-
-        .nomatch-redirect-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .nomatch-redirect-container > img {
-            width: 25px;
-            height: auto;
-            margin-left: 0.75rem;
-        }
+    .nomatch-redirect-container > img {
+      width: 25px;
+      height: auto;
+      margin-left: 0.75rem;
     }
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
   #nomatch  {
 
-        .nomatch-alert {
-            font-size: 3rem;
-        }
-
-        .nomatch-redirect {
-            font-size: 2rem;
-
-            .nomatch-redirect-container > img {
-                width: 45px;
-            }
-        }
+    .nomatch-alert {
+      font-size: 3rem;
     }
+
+    .nomatch-redirect {
+      font-size: 2rem;
+
+      .nomatch-redirect-container > img {
+        width: 45px;
+      }
+    }
+  }
 }

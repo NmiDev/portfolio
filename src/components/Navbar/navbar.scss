@@ -1,23 +1,23 @@
 @import '../../styles/vars';
 
 #navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    .navbar-link {
-        font-size: 14px;
-        text-decoration: none;
-        color: $color-light;
-        margin-left: 1rem;
-        padding: 0.3rem 0;
-    }
-    
-    .navbar-link:hover {
-        border-bottom: 1px solid $color-light;
-    }
-    
-    .navbar-link--active {
-        border-bottom: 1px solid $color-highlight;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .navbar-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: $color-light;
+    margin-left: 1rem;
+    padding: 0.3rem 0;
+  }
+  
+  .navbar-link:hover {
+    border-bottom: 1px solid $color-light;
+  }
+  
+  .navbar-link--active {
+    border-bottom: 1px solid $color-highlight;
+  }
 }

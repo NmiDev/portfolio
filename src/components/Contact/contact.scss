@@ -1,38 +1,40 @@
 @import '../../styles/vars';
 
 #contact {
+  color: $color-light;
+  // Height fallback for browsers that do not support Custom Properties
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100 - 100px);
+  background: $background-pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .contact-mail {
+    text-decoration: none;
     color: $color-light;
-    height: calc(100vh - 100px);
-    background: $background-pink;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 
-    .contact-mail {
-        text-decoration: none;
-        color: $color-light;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    .contact-github {
-        text-decoration: none;
-        color: $color-dark;
-        font-size: 1.3rem;
-    }
+  .contact-github {
+    text-decoration: none;
+    color: $color-dark;
+    font-size: 1.3rem;
+  }
 }
 
 // Large devices (desktops, 1024px and up)
 @media (min-width: 1024px) { 
-    #contact {
+  #contact {
 
-        .contact-mail {
-            font-size: 3rem;
-        }
-
-        .contact-github {
-            font-size: 2rem;
-        }
+    .contact-mail {
+      font-size: 3rem;
     }
+
+    .contact-github {
+      font-size: 2rem;
+    }
+  }
 }

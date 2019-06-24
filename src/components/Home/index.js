@@ -31,11 +31,9 @@ const Home = ({ socialinks }) => (
 
     {/* Section abstract */}
     <section id="abstract" className="home-section">
-      <p className="abstract-parag">Véritable passionné des nouvelles technologies et du vaste univers numérique, le développement Web est mon domaine de prédilection.</p>
+      <p className="abstract-parag">Véritable passionné des nouvelles technologies et du vaste univers numérique, le développement Web constitue mon domaine de prédilection.</p>
 
-      <p className="abstract-parag">Ce qui m’anime dans ce métier, c’est l’apprentissage permanent et la découverte perpétuelle de différentes techniques. C’est une remise en question incessante, au sein d’une incroyable communauté.</p>
-
-      <p className="abstract-parag">Je ne refuse jamais un nouvel échange, alors n’hésitez pas à m’adresser un message ! À bientôt.</p>
+      <p className="abstract-parag">Ce qui m’anime dans ce métier, c’est l’apprentissage permanent et la découverte perpétuelle de différentes techniques. C’est une remise en question incessante, au sein d’une incroyable communauté, alors n’hésitez pas à m’adresser un message.</p>
     </section>
 
 

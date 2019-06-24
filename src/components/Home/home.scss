@@ -1,101 +1,104 @@
 @import '../../styles/vars';
 
 #home {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas: 
-        "developer"
-        "abstract"
-        "contact";
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: 
+      "developer"
+      "abstract"
+      "contact";
 
-    .home-section {
-        padding: 3rem 1.5rem;
-    }
+  .home-section {
+    padding: 3rem 1.5rem;
+  }
 }
 
 #developer {
-    grid-area: developer;
-    // height: calc(100vh - 50px) ;
-    background: $background-light;
-    color: $color-dark;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  grid-area: developer;
+  background: $background-light;
+  color: $color-dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    .developer-title {
-        text-align: center;
-        font-size: 1.6rem;
-        margin: 3rem 0 1rem 0;
-        line-height: 1.2;
-    }
+  .developer-title {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 3rem 0 1rem 0;
+    line-height: 1.2;
+  }
 }
 
 #abstract {
-    grid-area: abstract;
-    background-color: $background-blue;
-    color: $color-dark;
+  grid-area: abstract;
+  background-color: $background-blue;
+  color: $color-dark;
 
-    .abstract-parag {
-        margin-bottom: 1.5rem;
-        font-size: 1rem;
-        line-height: 1.8;
-    }
+  .abstract-parag {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
 
-    .abstract-parag:last-of-type {
-        margin-bottom: 0;
-    }
+  .abstract-parag:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 #social {
-    grid-area: contact;
-    background: $background-deep;
-    color: $color-light;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: contact;
+  background: $background-deep;
+  color: $color-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // Media querie for Developer section
 @media (max-width: 576px) and (min-height: 640px) {
-    #developer {
-        height: calc(100vh - 50px) ;
-    }
+  #developer {
+    // Height fallback for browsers that do not support Custom Properties
+    height: calc(100vh - 50px) ;
+    height: calc(var(--vh, 1vh) * 100 - 50px);
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    #home {
-        .home-section {
-            padding: 5rem 2.5rem;
-        }
+  #home {
+    .home-section {
+        padding: 5rem 2.5rem;
     }
- }
+  }
+}
 
 // Large devices (desktops, 1024px and up)
 @media (min-width: 1024px) { 
-    #home {
-        grid-template-columns: 60% auto;
-        grid-template-rows: 70% auto;
-        grid-template-areas: 
-            "developer abstract"
-            "developer contact";
-        height: calc(100vh - 100px);
+  #home {
+    grid-template-columns: 60% auto;
+    grid-template-rows: 70% auto;
+    grid-template-areas: 
+        "developer abstract"
+        "developer contact";
+    // Height fallback for browsers that do not support Custom Properties
+    height: calc(100vh - 100px);
+    height: calc(var(--vh, 1vh) * 100 - 100px);
 
-        .home-section {
-            padding: 3rem 1.5rem;
-        }
+    .home-section {
+      padding: 3rem 1.5rem;
     }
+  }
 
-    #abstract {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  #abstract {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-        .abstract-parag {
-            margin-bottom: 1rem;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
+    .abstract-parag {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.6;
     }
+  }
 }

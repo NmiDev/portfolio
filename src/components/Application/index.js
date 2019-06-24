@@ -20,28 +20,47 @@ import NoMatch from 'Components/NoMatch';
 /**
  * Code
  */
-const Application = () => (
-  <div id="application">
-    {/* Header */}
-    <Header />
+class Application extends React.Component {
+  componentDidMount() {
+    // Catch the vh value and convert in unit
+    let vh = window.innerHeight * 0.01;
 
-    {/* Main with routes */}
-    <main>
-      <Switch>
-        {/* Home view */}
-        <Route path="/" exact component={Home} />
-        {/* Contact view */}
-        <Route path="/contact" component={Contact} />
-        {/* No match */}
-        <Route component={NoMatch} />
-      </Switch>
-    </main>
+    // Set our own property with vh, usefull for all the app
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-    {/* Footer */}
-    <Footer />
+    // Listening the rezising and set new vh if it's necessary
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  }
 
-  </div>
-);
+  render() {
+    return (
+      <div id="application">
+        {/* Header */}
+        <Header />
+
+        {/* Main with routes */}
+        <main>
+          <Switch>
+            {/* Home view */}
+            <Route path="/" exact component={Home} />
+            {/* Contact view */}
+            <Route path="/contact" component={Contact} />
+            {/* No match */}
+            <Route component={NoMatch} />
+          </Switch>
+        </main>
+
+        {/* Footer */}
+        <Footer />
+
+      </div>
+    );
+  }
+}
 
 /**
  * Exports
