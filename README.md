@@ -1,2 +1,2 @@
-# bootfolders
-My personal bootstrap
+# https://www.nmiweb.dev
+My personal website
