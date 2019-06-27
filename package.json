@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NmiDev/bootfolders.git"
+    "url": "git+https://github.com/NmiDev/portfolio.git"
   },
   "author": "NmiDev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NmiDev/bootfolders/issues"
+    "url": "https://github.com/NmiDev/portfolio.git"
   },
   "homepage": "https://www.nmiweb.dev",
   "devDependencies": {

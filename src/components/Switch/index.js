@@ -9,7 +9,9 @@ import { FaToggleOn, FaToggleOff } from 'react-icons/fa';
 /**
  * Local imports
  */
+// Styles and assets
 import './switch.scss';
+import Voice from '../../assets/voice.mp3';
 
 /**
  * Code
@@ -31,6 +33,14 @@ const Switch = ({ power, switchPower }) => {
 
       {/* Title */}
       <p className={titleClass}>Power</p>
+
+      {/* Sound */}
+      {power === true && (
+        // eslint-disable-next-line jsx-a11y/media-has-caption
+        <audio src={Voice} type="audio/mpeg" autoPlay>
+          Votre navigateur ne prend pas en compte la piste audio HTML
+        </audio>
+      )}
 
     </div>
   );

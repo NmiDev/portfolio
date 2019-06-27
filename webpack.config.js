@@ -4,6 +4,7 @@ const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 // Modes : dev, prod or none 
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -79,7 +80,7 @@ module.exports = {
       },
       // Files images manager
       {
-        test: /\.(png|svg|jpg|gif|ico)$/,
+        test: /\.(png|svg|jpg|gif|ico|mp3)$/,
         use: [
           {
             loader: 'file-loader',
@@ -113,6 +114,9 @@ module.exports = {
     }),
     new OptimizeCSSAssetsPlugin({
 
+    }),
+    new TerserPlugin({
+      
     }),
   ]
 };
