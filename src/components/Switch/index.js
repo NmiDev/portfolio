@@ -26,16 +26,16 @@ const Switch = ({ power, switchPower }) => {
     <div id="switch">
 
       {/* Switch On */}
-      {power === true && <FaToggleOn className="switch-button" onClick={switchPower} />}
+      {power && <FaToggleOn className="switch-button" onClick={switchPower} />}
 
       {/* Switch Off */}
-      {power === false && <FaToggleOff className="switch-button" onClick={switchPower} />}
+      {!power && <FaToggleOff className="switch-button" onClick={switchPower} />}
 
       {/* Title */}
       <p className={titleClass}>Power</p>
 
-      {/* Sound */}
-      {power === true && (
+      {/* Sound effect */}
+      {power && (
         // eslint-disable-next-line jsx-a11y/media-has-caption
         <audio src={Voice} type="audio/mpeg" autoPlay>
           Votre navigateur ne prend pas en compte la piste audio HTML

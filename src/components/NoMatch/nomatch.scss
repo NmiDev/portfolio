@@ -2,9 +2,8 @@
 
 #nomatch {
   color: $color-light;
-  // Height fallback for browsers that do not support Custom Properties
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100 - 100px);
+  height: 100vh; // Fallback
+  height: calc(var(--vh, 1vh) * 100 - #{$header-height} - #{$footer-height});
   background: $background-dark;
   text-align: center;
   display: flex;

@@ -13,13 +13,18 @@ import './link.scss';
 /**
  * Code
  */
-const Link = ({ name, href, icon }) => {
+const Link = ({
+  name,
+  href,
+  title,
+  icon,
+}) => {
   const Icon = components[icon];
 
   return (
     <a
       href={href}
-      title={href}
+      title={title}
       className={`social-link social-link-${name}`}
     >
       <Icon />
@@ -30,6 +35,7 @@ const Link = ({ name, href, icon }) => {
 Link.propTypes = {
   name: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
 };
 

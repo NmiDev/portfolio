@@ -15,7 +15,7 @@ import './footer.scss';
 const Footer = () => (
   <footer id="footer">
     <p>
-      Merci de votre visite - <span><Moment format="YYYY" /></span> - NmiWeb
+      <Moment format="YYYY" /> - <a className="footer-source" href="https://github.com/NmiDev/portfolio">Source on GitHub</a>
     </p>
   </footer>
 );

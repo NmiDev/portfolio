@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 import './home.scss';
 // Components
 import Robot from 'Containers/Robot';
-import Types from 'Containers/Types';
+import TypedJs from 'Containers/TypedJs';
 import Link from 'Components/Link';
 
 /**
@@ -26,7 +26,7 @@ const Home = ({ socialinks }) => (
 
       <h1 className="developer-title">Bonjour, je suis Nicolas !</h1>
 
-      <Types />
+      <TypedJs />
     </section>
 
     {/* Section abstract */}

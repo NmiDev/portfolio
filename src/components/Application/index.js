@@ -2,6 +2,7 @@
  * NPM imports
  */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Route, Switch } from 'react-router-dom';
 
 /**
@@ -9,6 +10,8 @@ import { Route, Switch } from 'react-router-dom';
  */
 // Styles
 import './application.scss';
+// Utils
+import setCustomHeight from 'Utils/tools';
 // Components
 import Header from 'Components/Header';
 import Footer from 'Components/Footer';
@@ -21,22 +24,26 @@ import NoMatch from 'Components/NoMatch';
  * Code
  */
 class Application extends React.Component {
+  static propTypes = {
+    views: PropTypes.arrayOf(PropTypes.object).isRequired,
+  };
+
   componentDidMount() {
-    // Catch the vh value and convert in unit
-    let vh = window.innerHeight * 0.01;
-
-    // Set our own property with vh, usefull for all the app
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-    // Listening the rezising and set new vh if it's necessary
-    window.addEventListener('resize', () => {
-      // We execute the same script as before
-      vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
+    // Set the initial custom height value
+    setCustomHeight();
+    // Resizing listener and update the custom property the --vh
+    window.addEventListener('resize', setCustomHeight);
   }
 
   render() {
+    // Views from the state
+    const { views } = this.props;
+    // Components list for each views
+    const componentsList = {
+      Home,
+      Contact,
+    };
+
     return (
       <div id="application">
         {/* Header */}
@@ -45,11 +52,22 @@ class Application extends React.Component {
         {/* Main with routes */}
         <main>
           <Switch>
-            {/* Home view */}
-            <Route path="/" exact component={Home} />
-            {/* Contact view */}
-            <Route path="/contact" component={Contact} />
-            {/* No match */}
+            {/* Paths from views */}
+            {views.map((view) => {
+              // Preparing the component for each view
+              const Component = componentsList[view.name];
+              // Return the path with the correct component
+              return (
+                <Route
+                  exact
+                  key={view.id}
+                  path={view.path}
+                  component={Component}
+                />
+              );
+            })}
+
+            {/* Path with no match */}
             <Route component={NoMatch} />
           </Switch>
         </main>

@@ -2,12 +2,11 @@
  * NPM imports
  */
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 
 /**
  * Local imports
  */
-import Navbar from 'Components/Navbar';
+import Application from 'Components/Application';
 
 /**
  * Action creators
@@ -26,11 +25,11 @@ const mapStateToProps = state => ({
 /**
  * Containers
  */
-const NavbarContainer = connect(
+const ApplicationContainer = connect(
   mapStateToProps,
-)(Navbar);
+)(Application);
 
 /**
  * Export
  */
-export default withRouter(NavbarContainer);
+export default ApplicationContainer;

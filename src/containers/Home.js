@@ -17,7 +17,7 @@ import Home from 'Components/Home';
  */
 // Dats from store and ownProps
 const mapStateToProps = state => ({
-  socialinks: state.datas.socialinks,
+  socialinks: state.socialinks,
 });
 
 // Action from store and ownProps

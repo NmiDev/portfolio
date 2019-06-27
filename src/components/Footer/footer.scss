@@ -1,11 +1,16 @@
 @import '../../styles/vars';
 
 #footer {
-  height: 50px;
+  height: $footer-height;
   font-size: 14px;
   padding: 1rem;
   background: $background-dark;
   color: $color-light;
   display: flex;
   align-items: center;
+
+  .footer-source {
+    text-decoration: none;
+    color: inherit;
+  }
 }

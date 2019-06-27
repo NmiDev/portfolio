@@ -58,9 +58,8 @@
 // Media querie for Developer section
 @media (max-width: 576px) and (min-height: 640px) {
   #developer {
-    // Height fallback for browsers that do not support Custom Properties
-    height: calc(100vh - 50px) ;
-    height: calc(var(--vh, 1vh) * 100 - 50px);
+    height: calc(100vh - #{$header-height}); // Fallback
+    height: calc(var(--vh, 1vh) * 100 - #{$header-height});
   }
 }
 
@@ -83,7 +82,7 @@
         "developer contact";
     // Height fallback for browsers that do not support Custom Properties
     height: calc(100vh - 100px);
-    height: calc(var(--vh, 1vh) * 100 - 100px);
+    height: calc(var(--vh, 1vh) * 100 - #{$header-height} - #{$footer-height});
 
     .home-section {
       padding: 3rem 1.5rem;

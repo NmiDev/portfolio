@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 /**
  * Local imports
  */
-import Types from 'Components/Types';
+import TypedJs from 'Components/TypedJs';
 
 /**
  * State (Store)
@@ -21,11 +21,11 @@ const mapStateToProps = state => ({
 /**
  * Conatiners
  */
-const TypesContainer = connect(
+const TypedJsContainer = connect(
   mapStateToProps,
-)(Types);
+)(TypedJs);
 
 /**
  * Export
  */
-export default TypesContainer;
+export default TypedJsContainer;

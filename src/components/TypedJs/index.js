@@ -8,12 +8,12 @@ import Typed from 'typed.js';
 /**
  * local imports
  */
-import './types.scss';
+import './typedjs.scss';
 
 /**
  * Code
  */
-class Types extends React.Component {
+class TypedJs extends React.Component {
   static propTypes = {
     strings: PropTypes.arrayOf(PropTypes.string).isRequired,
   }
@@ -57,4 +57,4 @@ class Types extends React.Component {
 /**
  * Export
  */
-export default Types;
+export default TypedJs;

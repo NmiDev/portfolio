@@ -18,6 +18,7 @@ module.exports = {
       Components: path.resolve(__dirname, 'src/components/'),
       Store: path.resolve(__dirname, 'src/store/'),
       Containers: path.resolve(__dirname, 'src/containers/'),
+      Utils: path.resolve(__dirname, 'src/utils'),
     }
   },
   // Set the entry point
