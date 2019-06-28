@@ -1,3 +1,4 @@
+import french from '../data/french';
 /**
  * Initial State
  */
@@ -39,14 +40,7 @@ const initialState = {
       icon: 'FaFile',
     },
   ],
-  datas: {
-    strings: [
-      'Développeur',
-      'Intégrateur',
-      'Tech-addict',
-      'Entrepreneur',
-    ],
-  },
+  datas: french,
 };
 
 /**

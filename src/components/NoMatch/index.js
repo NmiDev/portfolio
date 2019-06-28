@@ -27,7 +27,7 @@ const NoMatch = () => (
       exact
     >
       <span className="nomatch-redirect-container">
-        Choisis la pilule rouge <img src={Pill} alt="Choisis la pilule rouge pour voir Alice aux pays des merveilles " />
+        Choisis la pilule rouge <img src={Pill} alt="Try the red pill to meet Alice's Adventures in Wonderland" />
       </span>
     </NavLink>
 

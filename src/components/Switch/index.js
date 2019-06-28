@@ -38,7 +38,7 @@ const Switch = ({ power, switchPower }) => {
       {power && (
         // eslint-disable-next-line jsx-a11y/media-has-caption
         <audio src={Voice} type="audio/mpeg" autoPlay>
-          Votre navigateur ne prend pas en compte la piste audio HTML
+          Your browser does not support the HTML audio track
         </audio>
       )}
 

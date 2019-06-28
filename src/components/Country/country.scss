@@ -7,11 +7,12 @@
 
   .country-link {
     font-size: 14px;
+    font-weight: 700;
     color: $color-highlight;
     margin-left: 1rem;
     padding: 0.3rem 0;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.85;
   }
 
   .country-link:hover {
