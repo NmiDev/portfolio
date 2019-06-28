@@ -2,6 +2,7 @@
  * NPM imports
  */
 import React from 'react';
+import { FaRobot } from 'react-icons/fa';
 
 /**
  * Local imports
@@ -11,7 +12,6 @@ import './header.scss';
 // Components
 import Navbar from 'Containers/Navbar';
 import Switch from 'Containers/Switch';
-import Country from 'Containers/Country';
 
 /**
  * Code
@@ -22,12 +22,8 @@ const Header = () => (
     {/* Switch */}
     <Switch />
 
-    <div className="header-container">
-      {/* Navbar */}
-      <Navbar />
-      {/* Country */}
-      <Country />
-    </div>
+    {/* Navbar */}
+    <Navbar />
 
   </header>
 );

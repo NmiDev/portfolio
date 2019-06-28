@@ -17,23 +17,23 @@ import Link from 'Components/Link';
 /**
  * Code
  */
-const Home = ({ socialinks, title, parags }) => (
+const Home = ({ socialinks }) => (
   <div id="home">
 
     {/* Section developer */}
     <section id="developer" className="home-section">
       <Robot />
 
-      <h1 className="developer-title">{title}</h1>
+      <h1 className="developer-title">Bonjour, je suis Nicolas!</h1>
 
       <TypedJs />
     </section>
 
     {/* Section abstract */}
     <section id="abstract" className="home-section">
-      {parags.map(parag => (
-        <p className="abstract-parag" key={parag}>{parag}</p>
-      ))}
+      <p className="abstract-parag">Véritable passionné des nouvelles technologies et du vaste univers numérique, le développement Web constitue mon domaine de prédilection.</p>
+
+      <p className="abstract-parag">Ce qui m’anime dans ce métier, c’est l’apprentissage permanent et la découverte perpétuelle de différentes techniques. C’est une remise en question incessante, au sein d’une incroyable communauté, alors n’hésitez pas à m’adresser un message.</p>
     </section>
 
 
@@ -49,8 +49,6 @@ const Home = ({ socialinks, title, parags }) => (
 
 Home.propTypes = {
   socialinks: PropTypes.arrayOf(PropTypes.object).isRequired,
-  title: PropTypes.string.isRequired,
-  parags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 /**

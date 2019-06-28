@@ -1,10 +1,8 @@
-import french from '../data/french';
 /**
  * Initial State
  */
 const initialState = {
   power: false,
-  country: 'fr',
   views: [
     {
       id: 1,
@@ -40,14 +38,18 @@ const initialState = {
       icon: 'FaFile',
     },
   ],
-  datas: french,
+  strings: [
+    'Développeur',
+    'Intégrateur',
+    'Tech-addict',
+    'Entrepreneur',
+  ],
 };
 
 /**
  * Types
  */
 const SWITCH_POWER = 'SWITCH_POWER';
-const SWITCH_COUNTRY = 'SWITCH_COUNTRY';
 
 /**
  * Traitements
@@ -64,21 +66,6 @@ const reducer = (state = initialState, action = {}) => {
         power: !state.power,
       };
 
-    case SWITCH_COUNTRY: {
-      let newCountry;
-
-      if (state.country === 'fr') {
-        newCountry = 'en';
-      } else {
-        newCountry = 'fr';
-      }
-
-      return {
-        ...state,
-        country: newCountry,
-      };
-    }
-
     default:
       return state;
   }
@@ -89,10 +76,6 @@ const reducer = (state = initialState, action = {}) => {
  */
 export const switchPower = () => ({
   type: SWITCH_POWER,
-});
-
-export const switchCountry = () => ({
-  type: SWITCH_COUNTRY,
 });
 
 /**

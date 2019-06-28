@@ -13,7 +13,7 @@ import TypedJs from 'Components/TypedJs';
  */
 // Data from store and ownProps
 const mapStateToProps = state => ({
-  strings: state.datas.home.strings,
+  strings: state.strings,
 });
 
 // Actions from store and ownProps

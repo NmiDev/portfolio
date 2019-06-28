@@ -21,10 +21,10 @@ const Contact = () => (
       hello@nmiweb.dev
     </a>
     <a
-      className="contact-github"
-      href="https://github.com/NmiDev"
+      className="contact-phone"
+      href="tel:+33643432602"
     >
-      GitHub
+      +33 (0)6 43 43 26 02
     </a>
   </div>
 );
