@@ -11,6 +11,7 @@ import './header.scss';
 // Components
 import Navbar from 'Containers/Navbar';
 import Switch from 'Containers/Switch';
+import Country from 'Containers/Country';
 
 /**
  * Code
@@ -21,8 +22,12 @@ const Header = () => (
     {/* Switch */}
     <Switch />
 
-    {/* Navbar */}
-    <Navbar />
+    <div className="header-container">
+      {/* Navbar */}
+      <Navbar />
+      {/* Country */}
+      <Country />
+    </div>
 
   </header>
 );
