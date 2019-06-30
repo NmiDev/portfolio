@@ -23,17 +23,6 @@
     text-decoration: none;
     color: $color-highlight;
     font-size: 1.3rem;
-
-    .nomatch-redirect-container {
-      display: flex;
-      align-items: center;
-    }
-
-    .nomatch-redirect-container > img {
-      width: 25px;
-      height: auto;
-      margin-left: 0.75rem;
-    }
   }
 }
 
@@ -47,10 +36,6 @@
 
     .nomatch-redirect {
       font-size: 2rem;
-
-      .nomatch-redirect-container > img {
-        width: 45px;
-      }
     }
   }
 }

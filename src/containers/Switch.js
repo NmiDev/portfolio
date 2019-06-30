@@ -2,6 +2,7 @@
  * NPM import
  */
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 /**
  * Local import
@@ -39,4 +40,4 @@ const SwitchContainer = connect(
 /**
  * Export
  */
-export default SwitchContainer;
+export default withRouter(SwitchContainer);

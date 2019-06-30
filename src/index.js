@@ -10,7 +10,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 * Local imports
 */
 // Components
-import Application from 'Containers/Application';
+import Application from 'Components/Application';
 // Store
 import store from 'Store/';
 

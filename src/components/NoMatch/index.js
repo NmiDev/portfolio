@@ -25,9 +25,7 @@ const NoMatch = () => (
       className="nomatch-redirect"
       exact
     >
-      <span className="nomatch-redirect-container">
-        Retrouve la lumière!
-      </span>
+      Retrouve la lumière!
     </NavLink>
 
   </div>
