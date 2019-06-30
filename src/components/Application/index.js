@@ -42,7 +42,7 @@ class Application extends React.Component {
             {/* Home */}
             <Route path="/" exact component={Home} />
             {/* Contact */}
-            <Route path="/contact" component={Contact} />
+            <Route path="/contact" exact component={Contact} />
 
             {/* Path with no match */}
             <Route component={NoMatch} />

@@ -35,7 +35,9 @@ module.exports = {
     // Path for the file
     path: path.resolve(__dirname, 'dist'),
     // Name for the output file
-    filename: "app.js"
+    filename: "app.js",
+    //
+    publicPath:"/"
   },
   // Loaders modules configurations
   module: {
@@ -85,6 +87,9 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              outputPath: 'assets/',
+            },
           },
         ],
       },
