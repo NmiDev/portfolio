@@ -1,4 +1,3 @@
-/* eslint-disable react/forbid-prop-types */
 /**
  * NPM imports
  */
@@ -11,8 +10,6 @@ import { Route, Switch } from 'react-router-dom';
  */
 // Styles
 import './application.scss';
-// Tools
-import * as tools from 'Utils/tools';
 // Components
 import Header from 'Components/Header';
 import Footer from 'Components/Footer';
@@ -26,70 +23,82 @@ import NoMatch from 'Components/NoMatch';
  */
 class Application extends React.Component {
   static propTypes = {
+    routes: PropTypes.objectOf(PropTypes.object).isRequired,
     location: PropTypes.object.isRequired,
     history: PropTypes.object.isRequired,
   }
 
   componentDidMount() {
-    // Check the route and update title
-    this.listenRoutes();
-    // Set the initial custom height value
-    tools.setCustomHeight();
-    // Resizing listener and update the custom property the --vh
-    window.addEventListener('resize', tools.setCustomHeight);
-  }
-
-  listenRoutes = () => {
     // Catch the value from props
     const { history, location } = this.props;
-    // Set the initial title on load
-    this.changeTitle(location);
-    // Listen route changing
-    history.listen(this.changeTitle);
+    // Set the initial custom title
+    this.setCustomTitle(location);
+    // Set the initial custom height value
+    this.setCustomHeight();
+    // Listener for route change and upadte title
+    history.listen(this.setCustomTitle);
+    // Listener for resizing and update property --vh
+    window.addEventListener('resize', this.setCustomHeight);
   }
 
-  changeTitle = ({ pathname }) => {
-    // Init the newTitle with no location title
-    let newTitle = 'NmiDev - Red pill or Blue pill ?';
-    // Set the value for newTitle
-    switch (pathname) {
-      case '/':
-        newTitle = 'NmiDev - Developer and Tech-addict';
-        break;
-      case '/contact':
-        newTitle = 'NmiDev - Contact';
-        break;
-      default:
-        break;
+  setCustomHeight = () => {
+    // Catch the vh value and convert in unit
+    const vh = window.innerHeight * 0.01;
+    // Set our own property with this vh
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  };
+
+  setCustomTitle = ({ pathname }) => {
+    // Catch the value from props
+    const { routes } = this.props;
+    // Init titleValue
+    let titleValue;
+    // Check if the route exist in routes
+    if (pathname in routes) {
+      // Set the title
+      titleValue = routes[pathname].title;
+    } else {
+      // Set the fallback title, noMatch
+      titleValue = 'NmiDev - Red pill or Blue pill ?';
     }
-    // Set the newTitle for the document
-    document.title = newTitle;
-  }
+    // Set the page title
+    document.title = titleValue;
+  };
 
   render() {
+    // Catch what I need from the props
+    const { routes } = this.props;
+    // Correlation between route name and Component
+    const views = {
+      Home,
+      Contact,
+    };
+
     return (
       <div id="application">
-
         {/* Header */}
         <Header />
 
         {/* Main with routes */}
         <main>
           <Switch>
-            {/* Home */}
-            <Route path="/" exact component={Home} />
+            {/* Maps all routes */}
+            {Object.keys(routes).map(route => (
+              <Route
+                exact
+                key={route}
+                path={route}
+                component={views[routes[route].component]}
+              />
+            ))}
 
-            {/* Contact */}
-            <Route path="/contact" exact component={Contact} />
-
-            {/* Path with no match */}
+            {/* Route with no match */}
             <Route component={NoMatch} />
           </Switch>
         </main>
 
         {/* Footer */}
         <Footer />
-
       </div>
     );
   }

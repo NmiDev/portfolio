@@ -13,24 +13,24 @@ import './navbar.scss';
 /**
  * Code
  */
-const Navbar = ({ views }) => (
+const Navbar = ({ routes }) => (
   <nav id="navbar">
-    {views.map(view => (
+    {Object.keys(routes).map(route => (
       <NavLink
-        key={view.id}
-        to={view.path}
+        key={route}
+        to={route}
         className="navbar-link"
         activeClassName="navbar-link--active"
         exact
       >
-        {view.name}
+        {routes[route].name}
       </NavLink>
     ))}
   </nav>
 );
 
 Navbar.propTypes = {
-  views: PropTypes.arrayOf(PropTypes.object).isRequired,
+  routes: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
 /**

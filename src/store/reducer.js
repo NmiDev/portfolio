@@ -3,18 +3,20 @@
  */
 const initialState = {
   power: false,
-  views: [
-    {
-      id: 1,
+  routes: {
+    '/': {
       name: 'Home',
       path: '/',
+      title: 'NmiDev - Developer and Tech-addict',
+      component: 'Home',
     },
-    {
-      id: 2,
+    '/contact': {
       name: 'Contact',
       path: '/contact',
+      title: 'NmiDev - Contact',
+      component: 'Contact',
     },
-  ],
+  },
   socialinks: [
     {
       id: 1,
@@ -33,7 +35,7 @@ const initialState = {
     {
       id: 3,
       name: 'resume',
-      href: 'https://drive.google.com/open?id=1n6p6tUhYfNfhbfqo_aF3OZIsq1Jv_KVK',
+      href: 'https://drive.google.com/open?id=12tsbSX35vATLvJLuPXdj_a6ezB73ar5C',
       title: 'Visit my resume',
       icon: 'FaFile',
     },

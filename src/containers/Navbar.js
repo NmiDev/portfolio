@@ -17,7 +17,7 @@ import Navbar from 'Components/Navbar';
  */
 // Datas from store and ownProps
 const mapStateToProps = state => ({
-  views: state.views,
+  routes: state.routes,
 });
 
 // Actions from store and ownProps
