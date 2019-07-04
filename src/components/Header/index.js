@@ -2,7 +2,6 @@
  * NPM imports
  */
 import React from 'react';
-import { FaRobot } from 'react-icons/fa';
 
 /**
  * Local imports

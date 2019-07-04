@@ -80,7 +80,7 @@
     grid-template-areas: 
         "developer abstract"
         "developer contact";
-    // Height fallback for browsers that do not support Custom Properties
+    // Fallback
     height: calc(100vh - 100px);
     height: calc(var(--vh, 1vh) * 100 - #{$header-height} - #{$footer-height});
 

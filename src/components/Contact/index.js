@@ -14,18 +14,23 @@ import './contact.scss';
  */
 const Contact = () => (
   <div id="contact">
+
     <a
       className="contact-mail"
       href="mailto:hello@nmiweb.dev"
+      title="Leave me a messsage"
     >
       hello@nmiweb.dev
     </a>
+
     <a
-      className="contact-phone"
-      href="tel:+33643432602"
+      className="contact-github"
+      href="https://github.com/NmiDev"
+      title="Visit my GitHub"
     >
-      +33 (0)6 43 43 26 02
+      GitHub
     </a>
+
   </div>
 );
 

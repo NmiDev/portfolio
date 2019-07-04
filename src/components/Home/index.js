@@ -36,7 +36,6 @@ const Home = ({ socialinks }) => (
       <p className="abstract-parag">Ce qui m’anime dans ce métier, c’est l’apprentissage permanent et la découverte perpétuelle de différentes techniques. C’est une remise en question incessante, au sein d’une incroyable communauté, alors n’hésitez pas à m’adresser un message.</p>
     </section>
 
-
     {/* Section more */}
     <section id="social" className="home-section">
       {socialinks.map(socialink => (

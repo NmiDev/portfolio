@@ -36,7 +36,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     // Name for the output file
     filename: "app.js",
-    //
+    // Base path for assets
     publicPath:"/"
   },
   // Loaders modules configurations

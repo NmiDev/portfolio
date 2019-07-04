@@ -2,7 +2,6 @@
  * NPM imports
  */
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 
 /**
  * Local import
@@ -33,4 +32,4 @@ const HomeContainer = connect(
 /**
  * Export
  */
-export default withRouter(HomeContainer);
+export default HomeContainer;
