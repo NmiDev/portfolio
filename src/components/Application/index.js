@@ -4,13 +4,15 @@
  */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Route, Switch, withRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 /**
  * Local imports
  */
 // Styles
 import './application.scss';
+// Tools
+import * as tools from 'Utils/tools';
 // Components
 import Header from 'Components/Header';
 import Footer from 'Components/Footer';
@@ -32,17 +34,10 @@ class Application extends React.Component {
     // Check the route and update title
     this.listenRoutes();
     // Set the initial custom height value
-    this.setCustomHeight();
+    tools.setCustomHeight();
     // Resizing listener and update the custom property the --vh
-    window.addEventListener('resize', this.setCustomHeight);
+    window.addEventListener('resize', tools.setCustomHeight);
   }
-
-  setCustomHeight = () => {
-    // Catch the vh value and convert in unit
-    const vh = window.innerHeight * 0.01;
-    // Set our own property with this vh
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  };
 
   listenRoutes = () => {
     // Catch the value from props
@@ -103,4 +98,4 @@ class Application extends React.Component {
 /**
  * Exports
  */
-export default withRouter(Application);
+export default Application;
