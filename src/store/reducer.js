@@ -35,7 +35,7 @@ const initialState = {
     {
       id: 3,
       name: 'resume',
-      href: 'https://drive.google.com/open?id=12tsbSX35vATLvJLuPXdj_a6ezB73ar5C',
+      href: 'https://drive.google.com/open?id=19G73mb3GcNRFdaOUCnEfyPVAGVbThSR3',
       title: 'Visit my resume',
       icon: 'FaFile',
     },
